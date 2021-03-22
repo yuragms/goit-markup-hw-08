@@ -3,20 +3,18 @@
 .page-header {
   padding-top: 16px;
   padding-bottom: 16px;
-}
-
-@media screen and (min-width: 768px) {
-  padding-top: 26px;
-  padding-bottom: 26px;
-}
-
-@media screen and (min-width: 1200px) {
-  max-width: 1200px;
-
   display: flex;
   align-items: center;
-  padding-top: 24px;
-  padding-bottom: 25px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
 .site-nav__list,
 .auth-nav__list {
@@ -37,7 +35,16 @@
 
 .site-nav {
   display: none;
-  margin-left: 93px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-left: 88px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: 93px;
+  }
 
   &__link {
     position: relative;
@@ -81,12 +88,20 @@
 .auth-nav {
   &__list {
     display: none;
-    margin-left: auto;
+    @media screen and (min-width: 768px) {
+      display: inline-block;
+      margin-left: auto;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      margin-left: auto;
+    }
   }
 
   &__link {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 
     color: var(--primary-text-color);
@@ -102,9 +117,20 @@
   &__link:focus {
     color: var(--accent-color);
   }
-  &__item:last-child {
-    margin-left: 50px;
+
+  @media screen and (min-width: 768px) {
+    &__item:last-child {
+      margin-top: 10px;
+    }
   }
+
+  @media screen and (min-width: 1200px) {
+    &__item:last-child {
+      margin-left: 50px;
+      margin-top: 0px;
+    }
+  }
+
   &__mailto {
     margin-right: 10px;
     fill: currentColor;
@@ -113,5 +139,16 @@
   &__smartfon {
     margin-right: 10px;
     fill: currentColor;
+  }
+}
+.header_menu {
+  margin-right: auto;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: none;
   }
 }

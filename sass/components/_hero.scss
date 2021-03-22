@@ -1,1 +1,53 @@
 /* Hero*/
+.hero {
+  background-image: linear-gradient(to right, var(--bg-hero), var(--bg-hero)),
+    url(../images/hero-mob@1x.jpg);
+
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: var(--bg-hero);
+
+  text-align: center;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/hero-mob@2x.jpg);
+  }
+}
+
+.hero__container {
+  min-height: 400px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+}
+
+.hero__title {
+  color: var(--primary-white-color);
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.37;
+  letter-spacing: 0.06em;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.hero__button {
+  display: inline-block;
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  text-align: center;
+  padding: 10px 32px;
+  border-radius: 4px;
+}
