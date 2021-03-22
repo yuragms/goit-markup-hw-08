@@ -1,18 +1,6 @@
 /* header*/
 
 .page-header {
-  padding-top: 16px;
-  padding-bottom: 16px;
-}
-
-@media screen and (min-width: 768px) {
-  padding-top: 26px;
-  padding-bottom: 26px;
-}
-
-@media screen and (min-width: 1200px) {
-  max-width: 1200px;
-
   display: flex;
   align-items: center;
   padding-top: 24px;
@@ -36,7 +24,6 @@
 }
 
 .site-nav {
-  display: none;
   margin-left: 93px;
 
   &__link {
@@ -80,7 +67,6 @@
 
 .auth-nav {
   &__list {
-    display: none;
     margin-left: auto;
   }
 
