@@ -32,7 +32,9 @@
                 <li class="auth-nav__item"><a href="mailto:info@devstudio.com" class="auth-nav__link"><svg class="auth-nav__mailto" width="16" height="12"><use href="./images/symbol-defs.svg#icon-envelope"></use></svg>info@devstudio.com</a></li>
                 <li class="auth-nav__item"><a href="tel:+380991111111" class="auth-nav__link"><svg class="auth-nav__smartfon" width="10" height="16"><use href="./images/symbol-defs.svg#icon-smartphone"></use></svg>+38 099 111 11 11</a></li>
             </ul>
-            <a href="#" ><svg class="header_menu" width="40" height="40"><use href="./images/symbol-defs.svg#icon-menu_40px"></use></svg></a>
+            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="header__icon" width="40" height="40"><use href="./images/symbol-defs.svg#icon-menu_40px"></use></svg>
+          </button>
         </div>
        
     </header>
@@ -81,11 +83,11 @@
             <div class="container doing__container">
                 <h2 class="doing__title">Чем мы занимаемся</h2>
                 <ul class="doing__list">
-                    <li><div class="doing__thumb"><img src="./images/box-1.jpg" alt="Набор текста" width="370">
+                    <li><div class="doing__thumb"><img src="./images/box1-1x.jpg" srcset="./images/box1-2x.jpg 2x" alt="Набор текста" width="370">
                     <p class="doing__text">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</p></div></li>
-                    <li><div class="doing__thumb"><img src="./images/box-2.jpg" alt="Мобильная версия" width="370">
+                    <li><div class="doing__thumb"><img src="./images/box2-1x.jpg" srcset="./images/box2-2x.jpg 2x" alt="Мобильная версия" width="370">
                         <p class="doing__text">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p></div></li>
-                    <li><div class="doing__thumb"><img src="./images/box-3.jpg" alt="Дизайн" width="370">
+                    <li><div class="doing__thumb"><img src="./images/box3-1x.jpg" srcset="./images/box3-2x.jpg 2x" alt="Дизайн" width="370">
                         <p class="doing__text">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p></div></li>
                 </ul>
             </div>
@@ -97,7 +99,7 @@
             <ul class="team__list">
                 <li class="team__item">
                     <article class="team__card">
-                        <div class="team__thumb"><img src="./images/team-card-1.jpg" alt="Игорь Демьяненко"></div>
+                        <div class="team__thumb"><img src="./images/team-card1-1x.jpg" srcset="./images/team-card1-2x.jpg 2x" alt="Игорь Демьяненко"></div>
                         <div class="team__desc">
                             <h3 class="team__personal">Игорь Демьяненко</h3>
                             <p class="team__proffesion">Product Designer</p>
@@ -112,7 +114,7 @@
                 </li>
                 <li class="team__item">
                     <article class="team__card">
-                        <div class="team__thumb"><img src="./images/team-card-2.jpg" alt="Ольга Репина"></div>
+                        <div class="team__thumb"><img src="./images/team-card2-1x.jpg" srcset="./images/team-card2-2x.jpg 2x" alt="Ольга Репина"></div>
                         <div class="team__desc">
                             <h3 class="team__personal">Ольга Репина</h3>
                             <p class="team__proffesion">Frontend Developer</p>
@@ -127,7 +129,7 @@
                 </li>
                 <li class="team__item">
                     <article class="team__card">
-                        <div class="team__thumb"><img src="./images/team-card-3.jpg" alt="Николай Тарасов"></div>
+                        <div class="team__thumb"><img src="./images/team-card3-1x.jpg" srcset="./images/team-card3-2x.jpg 2x" alt="Николай Тарасов"></div>
                         <div class="team__desc">
                             <h3 class="team__personal">Николай Тарасов</h3>
                             <p class="team__proffesion">Marketing</p>
@@ -143,7 +145,7 @@
                 </li>
                 <li class="team__item">
                     <article class="team__card">
-                        <div class="team__thumb"><img src="./images/team-card-4.jpg" alt="Михаил Ермаков"></div>
+                        <div class="team__thumb"><img src="./images/team-card4-1x.jpg" srcset="./images/team-card4-2x.jpg 2x" alt="Михаил Ермаков"></div>
                         <div class="team__desc">
                             <h3 class="team__personal">Михаил Ермаков</h3>
                             <p class="team__proffesion">UI Designer</p>
@@ -203,7 +205,7 @@
         </ul>
     </div>
     <div class="footer-form__container">
-        <form name="messege">
+        <form name="messege" >
             <label for="sendfoot" class="footer-form__label">ПОДПИШИТЕСЬ НА РАССЫЛКУ</label>
             <div class="footer-form__box"><input class="footer-form__input" type="email" name="sendfoot" id="sendfoot" placeholder="E-mail"/>
             <button class="footer-form__button" type="submit">Подписаться<svg class="footer-form__icon" ><use href="./images/symbol-defs.svg#icon-send"></use></svg></button></div>
@@ -245,6 +247,19 @@
          </div>
 
      </div>
+<!-- Выезжающее модальное меню -->
+     <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+            <svg class="icon-container__svg"><use href="./images/symbol-defs.svg#icon-name-form"></use></svg>
+        </button>
+  
+        <ul class="mobile-menu">
+          <li><a href="" class="link">О нас</a></li>
+          <li><a href="" class="link">Работы</a></li>
+          <li><a href="" class="link">Контакты</a></li>
+          <li><a href="" class="link">Карьера</a></li>
+        </ul>
+      </div>
 
   <!-- Ставим перед закрывающим тегом body -->
   <script src="./js/modal.js"></script>
@@ -259,6 +274,13 @@
       });
     })();
     </script>
+        <script
+        defer
+        src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"
+      ></script>
+      <script defer src="js/mobile-menu.js"></script>
 
  
 </body>
