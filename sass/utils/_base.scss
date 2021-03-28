@@ -19,38 +19,7 @@ ul {
 
 img {
   display: block;
-  width: 100%;
-  height: auto;
-}
-
-body {
-  background-color: var(--primary-white-color);
-  color: var(--primary-text-color);
-  font-family: Roboto, cursive;
-  letter-spacing: 0.03em;
-}
-/* Утилиты*/
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-h1,
-h2,
-h3,
-p {
-  margin: 0;
-}
-
-ul {
-  list-style: none;
-}
-
-img {
-  display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 

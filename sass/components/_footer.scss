@@ -32,6 +32,10 @@ footer {
   margin-bottom: 9px;
 }
 
+address {
+  font-style: normal;
+}
+
 .footer-contact {
   &__link {
     color: var(--telmail-footer-color);
@@ -176,6 +180,21 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: baseline;
+  }
+
+  .social-container {
+    padding-bottom: 0px;
+  }
+
+  .adress-container {
+    text-align: center;
+    margin-bottom: 0px;
+  }
+
+  .footer-form__container {
+    padding-bottom: 0px;
+    margin-top: 60px;
   }
 }
 
@@ -183,7 +202,8 @@ footer {
   .footer-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: baseline;
   }
 
   .adress-container {
@@ -208,13 +228,10 @@ footer {
 
   .social-container {
     padding-bottom: 0px;
-    padding-left: 70px;
-    padding-top: 15px;
   }
 
   .footer-form {
     &__container {
-      padding-left: 93px;
       padding-bottom: 0px;
       text-align: none;
     }

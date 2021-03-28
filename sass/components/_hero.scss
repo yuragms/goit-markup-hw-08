@@ -27,13 +27,12 @@
     background-image: linear-gradient(to right, var(--bg-hero), var(--bg-hero)),
       url(../images/hero-tab@1x.jpg);
   }
-}
-@media screen and (min-width: 768px),
-  screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
-  .hero {
-    background-image: url(../images/hero-tab@2x.jpg);
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero {
+      background-image: url(../images/hero-tab@2x.jpg);
+    }
   }
 }
 
@@ -42,14 +41,13 @@
     background-image: linear-gradient(to right, var(--bg-hero), var(--bg-hero)),
       url(../images/hero-desctop@1x.jpg);
   }
-}
 
-@media screen and (min-width: 1200px),
-  screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
-  .hero {
-    background-image: url(../images/hero-desctop@2x.jpg);
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero {
+      background-image: url(../images/hero-desctop@2x.jpg);
+    }
   }
 }
 
