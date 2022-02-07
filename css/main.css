@@ -30,9 +30,6 @@
 h1,
 h2,
 h3,
-h4,
-h5,
-h6,
 p {
   margin: 0;
 }
@@ -43,12 +40,8 @@ ul {
 
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
-}
-
-button {
-  padding: 0;
 }
 
 body {
@@ -81,6 +74,8 @@ body {
 
 /* header*/
 .page-header {
+  padding-top: 16px;
+  padding-bottom: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -117,25 +112,12 @@ body {
   color: var(--accent-color);
   font-weight: 700;
   font-family: Raleway, cursive;
-  font-size: 24px;
-  line-height: 1.17;
-  padding: 16px 0;
+  font-size: 26px;
+  line-height: 1.19;
 }
 
 .page-header__logo--black {
   color: var(--primary-black-color);
-}
-
-@media screen and (min-width: 768px) {
-  .page-header__logo {
-    font-size: 24px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .page-header__logo {
-    font-size: 26px;
-  }
 }
 
 .site-nav {
